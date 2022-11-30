@@ -27,6 +27,7 @@ jobs:
           uses: shimataro/ssh-key-action@v2
           with:
             key: ${{ secrets.SSH_PRIVATE_KEY }} 
+            known_hosts: unnecessary
         - name: Adding Known Hosts
           run: ssh-keyscan -H 192.168.1.9 >> ~/.ssh/known_hosts
         - name: Deploy with rsync
