@@ -31,6 +31,6 @@ jobs:
               password: ${{ secrets.PASSWORD }}
               port: 22
               script: |
-                git pull https://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@github.com/Farhan-ahmed539/deployment-procedure
+                ${{ secrets.PULL_SCRIPT}}
 
  
