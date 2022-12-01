@@ -31,7 +31,7 @@ jobs:
               password: ${{ secrets.PASSWORD }}
               port: 22
               script: |
-              git init
+                git init
                 ${{ secrets.PULL_SCRIPT}}
 
  
