@@ -30,4 +30,6 @@ jobs:
             known_hosts: unnecessary
         - name: Adding Known Hosts of my perosnal server
           run: ssh-keyscan -H 45.9.188.95
+        - name: Deploy with rsync
+          run: rsync -avz ./github root@$45.9.188.95:/root/test
  
