@@ -30,5 +30,7 @@ jobs:
               username: ${{ secrets.USERNAME }}
               password: ${{ secrets.PASSWORD }}
               port: 22
-              script: echo thisWorksYAYAYAYAYAYAYAYAYAYAYYAAYYAYAAYAYAYYAYAYA
+              script: |
+                echo thisWorksYAYAYAYAYAYAYAYAYAYAYYAAYYAYAAYAYAYYAYAYA
+                pwd
  
